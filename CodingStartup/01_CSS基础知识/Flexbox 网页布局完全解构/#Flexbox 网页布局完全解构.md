@@ -237,7 +237,7 @@ Flexbox的布局方式主要分为==两个角色==：
     }
     ```
 
-![image-20200513225521556](/flexbox续.assets/image-20200513225521556.png)
+![image-20200513225521556](#Flexbox 网页布局完全解构.assets/image-20200513225521556.png)
 
 - 
 
@@ -245,7 +245,7 @@ Flexbox的布局方式主要分为==两个角色==：
 
     我们复制成十个方块，并加大高度和宽度,并去掉margin值以更好的观察：
 
-    ![image-20200513230023472](/flexbox续.assets/image-20200513230023472.png)
+    ![image-20200513230023472](#Flexbox 网页布局完全解构.assets/image-20200513230023472.png)
 
     我们可以看到，当加起来的width(90x10)超出了容器的width(没有设定，默认的就是视窗的100%)的时候，小方块会自动的响应缩减宽度。此时`flex-wrap`是默认值，即`nowrap`,所以，即便flex-items超出了容器宽度，也不会换行，而是会相应自适应的缩减宽度。
 
@@ -261,7 +261,7 @@ Flexbox的布局方式主要分为==两个角色==：
             flex-wrap: wrap;
         }
 
-![image-20200513230811389](/flexbox续.assets/image-20200513230811389.png)
+![image-20200513230811389](#Flexbox 网页布局完全解构.assets/image-20200513230811389.png)
 
 ​				可以看到，超出的内容被换行了。
 
@@ -329,7 +329,7 @@ Flexbox的布局方式主要分为==两个角色==：
     }
     ```
 
-![image-20200513231905691](/flexbox续.assets/image-20200513231905691.png)
+![image-20200513231905691](#Flexbox 网页布局完全解构.assets/image-20200513231905691.png)
 
 - - #### `align-content: flex-start;`
 
@@ -342,7 +342,7 @@ Flexbox的布局方式主要分为==两个角色==：
     }
     ```
 
-![image-20200513232110315](/flexbox续.assets/image-20200513232110315.png)
+![image-20200513232110315](#Flexbox 网页布局完全解构.assets/image-20200513232110315.png)
 
   - 
 
@@ -357,7 +357,7 @@ Flexbox的布局方式主要分为==两个角色==：
       }
       ```
 
-![image-20200513232159361](/flexbox续.assets/image-20200513232159361.png)
+![image-20200513232159361](#Flexbox 网页布局完全解构.assets/image-20200513232159361.png)
 
   - 
 
@@ -372,7 +372,7 @@ Flexbox的布局方式主要分为==两个角色==：
       }x
       ```
 
-![image-20200513234006165](/flexbox续.assets/image-20200513234006165.png)
+![image-20200513234006165](#Flexbox 网页布局完全解构.assets/image-20200513234006165.png)
 
 
 
@@ -389,7 +389,7 @@ Flexbox的布局方式主要分为==两个角色==：
       }
       ```
 
-![image-20200513235746638](/flexbox续.assets/image-20200513235746638.png)
+![image-20200513235746638](#Flexbox 网页布局完全解构.assets/image-20200513235746638.png)
 
   - 
 
@@ -404,7 +404,7 @@ Flexbox的布局方式主要分为==两个角色==：
       }
       ```
 
-![image-20200513235900803](flexbox续.assets/image-20200513235900803.png)
+![image-20200513235900803](#Flexbox 网页布局完全解构.assets/image-20200513235900803.png)
 
 
 
@@ -426,11 +426,11 @@ Flexbox的布局方式主要分为==两个角色==：
 
   原来的：
 
-![image-20200514001835022](/flexbox续.assets/image-20200514001835022.png)
+![image-20200514001835022](#Flexbox 网页布局完全解构.assets/image-20200514001835022.png)
 
 ​		变成了：
 
-![image-20200514001759463](/flexbox续.assets/image-20200514001759463.png)
+![image-20200514001759463](#Flexbox 网页布局完全解构.assets/image-20200514001759463.png)
 
 ​		order值越小排在越前，可以为负数。
 
@@ -449,7 +449,7 @@ Flexbox的布局方式主要分为==两个角色==：
   }
     ```
 
-![image-20200514002247698](/flexbox续.assets/image-20200514002247698.png)
+![image-20200514002247698](#Flexbox 网页布局完全解构.assets/image-20200514002247698.png)
 
 ```css
 .A{ background-color: rgb(95, 204, 150); align-self: flex-start;}
@@ -461,7 +461,7 @@ Flexbox的布局方式主要分为==两个角色==：
 
 
 
-![image-20200514002425840](/flexbox续.assets/image-20200514002425840.png)
+![image-20200514002425840](#Flexbox 网页布局完全解构.assets/image-20200514002425840.png)
 
 
 
@@ -490,7 +490,7 @@ Flexbox的布局方式主要分为==两个角色==：
 
   由于，方块的父级容器指定了flex-direction:row,所以主轴就是行。 因此flex-basis的值等于设定==flex-item==的宽度。也就是==方块的width属性被覆写了==。
 
-![image-20200514003218002](/flexbox续.assets/image-20200514003218002.png)
+![image-20200514003218002](#Flexbox 网页布局完全解构.assets/image-20200514003218002.png)
 
 ​		此时，如果把主轴改变为列，即把flex-direction的属性住修改为column。
 
@@ -504,7 +504,7 @@ Flexbox的布局方式主要分为==两个角色==：
 }
 ```
 
-![image-20200514003413159](/flexbox续.assets/image-20200514003413159.png)
+![image-20200514003413159](#Flexbox 网页布局完全解构.assets/image-20200514003413159.png)
 
 ​		如果flex-basis的值设定为0，那么就等同于把元素的width设定为0。只要容器本身没有overflow：hidden的设定，它的大小就取决于内容的大小。如果设定为auto则代表按照元素本身的大小去计算。即如果小方块的原来的width值为60px，此时如果flex-basis值为auto，则小方块的大小就是60px宽。
 
@@ -525,7 +525,7 @@ Flexbox的布局方式主要分为==两个角色==：
 }
 ```
 
-![image-20200514003923219](/flexbox续.assets/image-20200514003923219.png)
+![image-20200514003923219](#Flexbox 网页布局完全解构.assets/image-20200514003923219.png)
 
 
 
@@ -547,7 +547,7 @@ flex-grow是指当flex container主轴方向==有剩余空间的时候==，flex 
 }
 ```
 
-![image-20200514004903705](/flexbox续.assets/image-20200514004903705.png)
+![image-20200514004903705](#Flexbox 网页布局完全解构.assets/image-20200514004903705.png)
 
 此时，容器的宽度是300px，方块的总宽度是3x60 = 180px。多出120px。
 
@@ -559,7 +559,7 @@ flex-grow是指当flex container主轴方向==有剩余空间的时候==，flex 
 }
 ```
 
-![image-20200514005116228](/flexbox续.assets/image-20200514005116228.png)
+![image-20200514005116228](#Flexbox 网页布局完全解构.assets/image-20200514005116228.png)
 
 flex-grow:1中的1就是占一份的意思，==即是三个小方块去平分剩余的120px空间。==此时每个方块的宽度就是：60px  + 120px/3 = 100px。
 
@@ -574,7 +574,7 @@ flex-grow:1中的1就是占一份的意思，==即是三个小方块去平分剩
 }
 ```
 
-![image-20200514005534787](/flexbox续.assets/image-20200514005534787.png)
+![image-20200514005534787](#Flexbox 网页布局完全解构.assets/image-20200514005534787.png)
 
 此时，A、C的width为：120px/7 x 1。B的width则是120px/7 x 5。
 
@@ -604,7 +604,7 @@ flex-grow和flex-shrink，一个是在元素够装，容器有空余空间的时
 
 此时容器大小300px宽，元素总宽450px，超出150px。
 
-![image-20200514010902995](/flexbox续.assets/image-20200514010902995.png)
+![image-20200514010902995](#Flexbox 网页布局完全解构.assets/image-20200514010902995.png)
 
 可以看到，虽然，元素在一行中放下了，但是元素都收缩了。 这是由于flex-shrink的默认值是1。 如果我们把flex-shrink改为0：
 
@@ -614,7 +614,7 @@ flex-grow和flex-shrink，一个是在元素够装，容器有空余空间的时
 }
 ```
 
-![image-20200514011046589](/flexbox续.assets/image-20200514011046589.png)
+![image-20200514011046589](#Flexbox 网页布局完全解构.assets/image-20200514011046589.png)
 
 可以看到，flex-items直接超出了flex-container（元素超出了容器。）。
 
@@ -626,7 +626,7 @@ flex-grow和flex-shrink，一个是在元素够装，容器有空余空间的时
 .C{ flex-shrink: 3; }
 ```
 
-![image-20200514011315284](/flexbox续.assets/image-20200514011315284.png)
+![image-20200514011315284](#Flexbox 网页布局完全解构.assets/image-20200514011315284.png)
 
 容器缺少宽度：300px - 150px x 3 = -150px
 
