@@ -1,0 +1,35 @@
+#toggler{
+    /*1*/
+    display:none;
+    
+  }
+  .hamburger-container{
+    /*2*/
+    width:20px;
+    height:20px;
+    background-color:#000;
+    /*2*/
+    position:relative;/*9*/
+  }
+  /* 4 */
+  header{
+    background-color:#555;/*4.1*/
+    height:44px;/*4.2*/
+    padding:0 18px;/*8*/
+  }
+  /* 5 */
+  body{
+    padding:0;
+    margin:0;
+  }
+  /* 6 */
+  .hamburger-container span{
+    display:block;/* span原本行内元素 *//*6.1*/
+    height:1px;/*6.2*/
+    background-color:#fff;/*6.3*/
+  }
+
+/* 7这时候两条线会重合在一起，我们将他们分开 */
+.hamburger-container span:nth-child(2){
+  margin-top:7px;
+}
