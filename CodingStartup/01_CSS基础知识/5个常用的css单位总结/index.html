@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        
+        @media screen and (orientation: portrait) {
+            img {
+                width: 100vmin;
+            }
+            /* 竖屏 */
+        }
+        
+        @media screen and (orientation: landscape) {
+            img {
+                transform: translate(0, -28%);
+                width: 100vmax;
+
+            }
+            /* 横屏 */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./pic.jpg" alt="">
+</body>
+
+</html>
